@@ -1,0 +1,6 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_disability_registry,access_disability_registry,model_disability_registry,,1,1,1,1
+access_disability_support_elements,access_disability_support_elements,model_disability_support_elements,,1,1,1,1
+access_disability_therapies,access_disability_therapies,model_disability_therapies,,1,1,1,1
+access_disability_transport,access_disability_transport,model_disability_transport,,1,1,1,1
+access_disability_intervention,access_disability_intervention,model_disability_intervention,,1,1,1,1

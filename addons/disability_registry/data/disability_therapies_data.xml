@@ -1,0 +1,28 @@
+<odoo>
+    <data>
+        <record id="therapies_ocupacional" model="disability.therapies">
+            <field name="name">Terapia Ocupacional</field>
+        </record>
+        <record id="therapies_psiquiatria" model="disability.therapies">
+            <field name="name">Psiquiatria</field>
+        </record>
+        <record id="therapies_fonoaudiologia" model="disability.therapies">
+            <field name="name">Fonoaudiologia</field>
+        </record>
+        <record id="therapies_psicologia" model="disability.therapies">
+            <field name="name">Psicologia</field>
+        </record>
+        <record id="therapies_psicopedagogia" model="disability.therapies">
+            <field name="name">Psicopedagogia</field>
+        </record>
+        <record id="therapies_kinesiologia" model="disability.therapies">
+            <field name="name">Kinesiologia</field>
+        </record>
+        <record id="therapies_acompanatea_terapeutico" model="disability.therapies">
+            <field name="name">Acompañante Terapeutico</field>
+        </record>
+        <record id="therapies_otro" model="disability.therapies">
+            <field name="name">Otro</field>
+        </record>
+    </data>
+</odoo>

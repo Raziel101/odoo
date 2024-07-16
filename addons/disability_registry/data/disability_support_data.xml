@@ -1,0 +1,40 @@
+<odoo>
+    <data>
+        <record id="support_wheelchair" model="disability.support.elements">
+            <field name="name">Silla de Ruedas</field>
+        </record>
+        <record id="support_cane" model="disability.support.elements">
+            <field name="name">Bastón</field>
+        </record>
+        <record id="support_hearing_aid" model="disability.support.elements">
+            <field name="name">Andador</field>
+        </record>
+        <record id="support_tripodes" model="disability.support.elements">
+            <field name="name">Tripodes</field>
+        </record>
+        <record id="support_muletas" model="disability.support.elements">
+            <field name="name">Muletas</field>
+        </record>
+        <record id="support_lentes" model="disability.support.elements">
+            <field name="name">Lentes</field>
+        </record>
+        <record id="support_sonda" model="disability.support.elements">
+            <field name="name">Sonda</field>
+        </record>
+        <record id="support_baston_canadiense" model="disability.support.elements">
+            <field name="name">Baston Canadiense</field>
+        </record>
+        <record id="support_pierna_ortopedica" model="disability.support.elements">
+            <field name="name">Pierna Ortopèdica</field>
+        </record>
+        <record id="support_implante_ocular" model="disability.support.elements">
+            <field name="name">Implante Ocular</field>
+        </record>
+        <record id="support_implante_auditivo" model="disability.support.elements">
+            <field name="name">Implante Auditivo</field>
+        </record>
+        <record id="support_otro" model="disability.support.elements">
+            <field name="name">Otro</field>
+        </record>
+    </data>
+</odoo>

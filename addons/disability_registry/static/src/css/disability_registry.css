@@ -1,0 +1,5 @@
+.o_field_widget.o_field_many2manytags ul {
+    columns: 3;  /* Número de columnas */
+    -webkit-columns: 3; /* Safari y Chrome */
+    -moz-columns: 3; /* Firefox */
+}

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="view_disability_registry_form" model="ir.ui.view">
+        <field name="name">disability.registry.form</field>
+        <field name="model">disability.registry</field>
+        <field name="arch" type="xml">
+            <form string="Registro Único de Personas con Discapacidad">
+                <group string="Datos Personales">
+                    <field name="name"/>
+                    <field name="domicilio"/>
+                    <field name="fecha_nacimiento"/>
+                    <field name="telefono"/>
+                    <field name="correo_electronico"/>
+                    <field name="dni"/>
+                </group>
+                <group string="Responsable">
+                    <field name="resp_name"/>
+                    <field name="resp_domicilio"/>
+                    <field name="resp_fecha_nacimiento"/>
+                    <field name="resp_telefono"/>
+                    <field name="resp_correo_electronico"/>
+                </group>
+                <group string="Situación de Discapacidad">
+                    <field name="cud"/>
+                    <field name="cud_fecha_emicion"/>
+                    <field name="cud_fecha_vencimiento"/>
+                    <field name="pension"/>
+                    <field name="obra_social"/>
+                    <field name="obra_social_cual" />
+                    <field name="support_element_ids" widget="many2many_checkboxes"/>
+                    <field name="diagnosis"/>
+                    <field name="acompanante"/>
+                    <field name="acompanante_nombre"/>
+                    <field name="acom_telefono"/>
+                    <field name="acom_correo_electronico"/>
+                    <field name="controla_esfinter"/>
+                    <field name="alergias"/>
+                    <field name="alergias_detalle"/>
+                    <field name="terapia_ids" widget="many2many_checkboxes"/>
+                    <field name="movilidad_ids" widget="many2many_checkboxes"/>
+                    <field name="usa_transporte_municipal"/>
+                </group>
+                <group string="Situación Educacional y Laboral">
+                    <field name="nivel_educativo"/>
+                    <field name="concurre_institucion"/>
+                    <field name="institucion_cual"/>
+                    <field name="trabaja"/>
+                    <field name="trabajo_donde"/>
+                </group>
+                <group string="Historial de Intervenciones">
+                    <field name="intervencion_ids">
+                        <tree string="Intervenciones">
+                            <field name="fecha"/>
+                            <field name="profesional"/>
+                            <field name="observaciones"/>
+                        </tree>
+                    </field>
+                </group>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_disability_registry_tree" model="ir.ui.view">
+        <field name="name">disability.registry.tree</field>
+        <field name="model">disability.registry</field>
+        <field name="arch" type="xml">
+            <tree string="Registro de Personas con Discapacidad">
+                <field name="name"/>
+                <field name="dni"/>
+                <field name="telefono"/>
+                <field name="correo_electronico"/>
+            </tree>
+        </field>
+    </record>
+<!-- Definir acción -->
+    <record id="action_disability_registry" model="ir.actions.act_window">
+        <field name="name">Registros de Personas con Discapacidad</field>
+        <field name="res_model">disability.registry</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <!-- Definir menú raíz -->
+    <menuitem id="menu_disability_registry_root" name="Disability Registry" sequence="1"/>
+
+    <!-- Definir menú para los registros -->
+    <menuitem id="menu_disability_registry" name="Registros de Personas con Discapacidad" parent="menu_disability_registry_root" action="action_disability_registry" sequence="2"/>
+</odoo>

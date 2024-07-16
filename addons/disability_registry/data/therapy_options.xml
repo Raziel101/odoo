@@ -1,0 +1,15 @@
+<odoo>
+    <record id="option_therapy_occupational" model="therapy.option">
+        <field name="name">Terapia Ocupacional</field>
+    </record>
+    <record id="option_therapy_psychiatric" model="therapy.option">
+        <field name="name">Psiquiatría</field>
+    </record>
+    <record id="option_therapy_psychopedagogy" model="therapy.option">
+        <field name="name">Psicopedagogía</field>
+    </record>
+    <record id="option_therapy_psychology" model="therapy.option">
+        <field name="name">Psicología</field>
+    </record>
+    <!-- Add more options as needed -->
+</odoo>

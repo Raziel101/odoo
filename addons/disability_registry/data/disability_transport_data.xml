@@ -1,0 +1,19 @@
+<odoo>
+    <data>
+        <record id="transporte_automovil" model="disability.transport">
+            <field name="name">Automovil</field>
+        </record>
+        <record id="transporte_bicicleta" model="disability.transport">
+            <field name="name">Bicicleta</field>
+        </record>
+        <record id="transporte_urbano" model="disability.transport">
+            <field name="name">Transporte Urbano</field>
+        </record>
+        <record id="transporte_motovehículo" model="disability.transport">
+            <field name="name">Motovehículo</field>
+        </record>
+        <record id="transporte_municipal" model="disability.transport">
+            <field name="name">Transporte Municipal</field>
+        </record>
+    </data>
+</odoo>
